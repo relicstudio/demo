@@ -155,8 +155,12 @@ font-size: 18px !important;
                       <input id="iyc-yn" name="iyc-yn" type="text" class="form-control" placeholder="...">
                     </div>
                    <div class="form-group">
-                      <label>Your Wish <small>(required)</small></label>
-                      <textarea row="4" cols="20" id="iyc-yz" name="iyc-yz"  class="form-control" placeholder="..."  onclick="divide()"></textarea>
+                      <label>Your Designation <small>(required)</small></label>
+                      <input id="iyc-yz" name="iyc-yz" type="text" class="form-control" placeholder="...">
+                    </div>
+                     <div class="form-group">
+                      <label>Birthday Wish <small>(required)</small></label>
+                      <input id="iyc-yx" name="iyc-yx" type="text" class="form-control" placeholder="...">
                     </div>
                   </div>
 
@@ -277,11 +281,16 @@ font-size: 18px !important;
     $('#gnrate').click(()=>{
       $('#ajaxloader').fadeIn();
       var yn= $('#iyc-yn').val();
+      var yx= $('#iyc-yx').val();
       var yz= $('#iyc-yz').val();
       // var hn= $('#iyc-hn').val();
           var $validator = $('.wizard-card form').validate({
       rules: {
         'iyc-yn': {
+          required: true,
+          minlength: 3
+        },
+        'iyc-yx': {
           required: true,
           minlength: 3
         },
@@ -340,7 +349,10 @@ var atn = a.getContext("2d");
           atz.color = "black";
           atz.fillText(yn,330,800);
           atn.font = "900 22px 'Roboto', sans-serif";
-          atn.fillText(yz,330,855);
+          atn.fillText(yx,330,900);
+          atn.font = "900 22px 'Roboto', sans-serif";
+          atn.fillText("Designation : "+yz,330,855);
+          
 
            download();
         }
