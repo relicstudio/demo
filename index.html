@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="fav.png">
+	<link rel="icon" type="image/png" href="earth.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>HBD</title>
+
+   <meta name="description" content="Create your own poster to show protest against government over expenditure">
+  <meta name="keywords" content="HBD DR.Kamaraj">
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--     Fonts and icons     -->
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/css/demo.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css"  rel="stylesheet"/>
+
+  <style type="text/css">
+    .wizard-container{
+      padding-bottom: 200px
+    }
+    #Canvatext{
+      display: none;
+    }
+body{
+background-image: url("bc.jpg");
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  background-color: #064D96;
+}
+   .wizard-header h3 {
+              font-family: 'Manjari', sans-serif;
+      font-weight: 900;
+
+}
+
+    .wizard-header p {
+          font-family: 'Manjari', sans-serif;
+
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 16px;
+      max-width: 480px;
+      text-align: center;
+      margin: 17px auto;
+      color: #444343;
+    }
+
+    @media only screen and (max-width: 600px) {
+   .wizard-header h3 b{
+
+font-size: 18px !important;
+    color: #3e3e3e;
+    font-weight: 900;
+        }
+
+          .wizard-header p {
+ 
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 0 5px;
+     
+    }
+
+   
+}
+    
+  </style>
+
+
+</head>
+
+<body>
+
+   <div style="    position: fixed;
+ z-index: 99999999;
+ width: 100%;
+ height: 100%;
+ background: #3c3b3b2e;
+ display: none;
+ " id="ajaxloader">
+ <img style="
+ position: fixed;
+ z-index: 99999999;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ width: 100px;
+ " src="assets/img/1.gif" /> 
+</div>
+  <div class="image-container set-full-height" style=" ">
+
+
+<style type="text/css">
+  .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #fff;
+}
+</style>
+
+  <div class="container-fluid" style="background-color: black;color:white;">
+    <h2 class="display-2" style="font-size: 20px; text-align: center;" >Happy Birthday ♥'</h2>
+    <a href="https://relicstudio.dev"  target="_blank" style="float: right; font-size: 24px;text-decoration: none;color: white;"> Relicstudio.dev &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     </a>
+  </div>
+    <!--   Big container   -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+          <!--      Wizard container        -->
+          <div class="wizard-container">
+
+            <div class="card wizard-card" data-color="orange" id="wizardProfile">
+              <form action="" method="">
+                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                <div class="wizard-header">
+                 <h3>
+                  <b id=""></b> This is a demo text <br>
+                  <p >பிறந்தநாள் வாழ்த்துக்கள் </p>
+                </h3>
+                <hr>
+              </div>
+
+              <div class=" ">
+               <ul>
+                 <li><a href="#mkr" data-toggle="tab"> </a></li>
+               </ul>
+
+             </div>
+
+             <div class="tab-content">
+              <div class="tab-pane" id="mkr">
+                <div class="row">
+                  <h4 class="info-text">   </h4>
+                  <div class="col-sm-3">
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Your Name <small>(required)</small></label>
+                      <input id="iyc-yn" name="iyc-yn" type="text" class="form-control" placeholder="...">
+                    </div>
+                   <div class="form-group">
+                      <label>Your Wish <small>(required)</small></label>
+                      <textarea row="4" cols="20" id="iyc-yz" name="iyc-yz"  class="form-control" placeholder="..."  onclick="divide()"></textarea>
+                    </div>
+                  </div>
+
+             
+
+                  <div class="col-sm-4 col-sm-offset-3">
+                   <div class="picture-container">
+                    <div class="  form-group" >
+                     <h4> Photo</h4>
+
+                     <input type="file" class="form-control" id="wizard-picture">
+                   </div>
+                   <hr>
+                   <div id="iyc-pic"></div>
+
+                 </div>
+               </div>
+
+             </div>
+           </div>
+
+
+         </div>
+         <hr>
+         <div class="wizard-footer height-wizard">
+          <div class="text-center ">
+
+            <input type='button' class='btn btn-finish btn-fill btn-warning  btn-lg' name='finish'  value='Generate' id="gnrate" />
+
+          </div>
+
+
+          <div class="clearfix"></div>
+        </div>
+
+      </form>
+    </div>
+  </div> <!-- wizard container -->
+</div>
+</div><!-- end row -->
+</div> <!--  big container -->
+
+</div>
+
+<div style="display: black;">
+  <canvas id="Canvatext" width="1000" height="1000" style="background:crimson;">
+  </canvas>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164153986-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164153986-1');
+</script>
+
+</body>
+
+
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
+<script type="text/javascript" src="./assets/js/croppie.js"></script>
+<script type="text/javascript" src="./assets/js/exif.js"></script>
+<script type="text/javascript">
+  $(()=>{
+    var $uploadCrop = $('#iyc-pic').croppie({
+      enableExif: true,
+      viewport: {
+        width: 150,
+        height: 150,
+      type: 'circle'
+
+      },
+      boundary: {
+        width: 200,
+        height: 200
+      },
+      
+      url : 'assets/img/default-avatar.png'
+    });
+    $(document).on("change", "[type=file]", function() {
+      var input = this
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          $uploadCrop.croppie('bind', {
+            url: e.target.result
+          });
+        // $(input).replaceWith($(input).clone())
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  });
+
+
+
+    var img = new Image();
+    var img1 = new Image();
+   
+    
+
+    
+
+    $('#gnrate').click(()=>{
+      $('#ajaxloader').fadeIn();
+      var yn= $('#iyc-yn').val();
+      var yz= $('#iyc-yz').val();
+      // var hn= $('#iyc-hn').val();
+          var $validator = $('.wizard-card form').validate({
+      rules: {
+        'iyc-yn': {
+          required: true,
+          minlength: 3
+        },
+         'iyc-yz': {
+          required: true,
+          minlength: 3
+        },
+        'iyc-hn': {
+          required: true,
+          minlength: 3
+        }
+         
+        }
+  });
+
+
+      var $valid = $('.wizard-card form').valid();
+          if(!$valid) {
+            $validator.focusInvalid();
+                        swal("Something Went Wrong!",'', "error");
+            $('#ajaxloader').hide();
+
+            return false;
+
+          }else{
+
+      var download = async function(){
+        var link = document.createElement('a');
+        link.download = 'hbdkamaraj.jpg';
+        link.href = document.getElementById('Canvatext').toDataURL();
+        link.click();
+
+        $('.wizard-footer').append('<img  src="'+link.href+'" width= "100%" />');
+      }
+
+       img.onload = function () {
+
+    
+      $uploadCrop.croppie('result', {
+        type: 'base64',
+        size: 'viewport',
+        quality:1,
+        format:'jpg'
+        
+      }).then(function (resp) {
+        var a = document.getElementById("Canvatext");
+        var atz = a.getContext("2d");
+var atn = a.getContext("2d");
+         atz.drawImage(img, 10, 10, 1000,1000);
+        img1.onload = function () {
+
+
+          atz.drawImage(img1, 39, 750, 240,240);
+          atz.font = "900 38px 'Roboto', sans-serif";
+          atz.fillStyle = " black";
+          atz.color = "black";
+          atz.fillText(yn,330,800);
+          atn.font = "900 22px 'Roboto', sans-serif";
+          atn.fillText(yz,330,855);
+
+           download();
+        }
+        img1.src=resp;
+
+        
+      });
+            $('#ajaxloader').hide();
+
+            swal("Generated!"," ", "success").then(()=>{ 
+
+            });
+
+      }
+    img.src = './999.jpg';
+
+}
+      
+    }) ;
+
+
+
+    
+    
+  });
+  
+
+</script>
+<style type="text/css">
+  .footerinfo {
+    position: relative;
+    bottom:0;
+    font-size: 9px;
+     text-align:center;
+     width: 100%;
+     margin-bottom: 10px;
+
+
+  }
+
+  .footerinfo p{
+ font-size: 11px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 12px;
+
+
+}
+
+
+</style>
+
+</div>
+<div class="footerinfo">
+<p><font color="black">
+Kindly note that the photo and name you're submitting in this app is not routed to any server. This is a client side app where the process of creating the poster with photo and name is happening at the user end. Your data is precious and personal. We're not storing it in any servers. Let's together create awareness about data privacy in our society.</p></font>
+<a href="https://relicstudio.dev" target="_blank"><img src="logo.png" height="250px" width="400px"></div></a>
+
+</html>
